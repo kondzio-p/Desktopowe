@@ -1,0 +1,20 @@
+﻿<Window x:Class="WpfApp5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp5"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Menu>
+            <MenuItem Header="_Opcje" Name="opcjeMenu">
+                
+            </MenuItem>
+        </Menu>
+        
+        <StackPanel Margin="40">
+            <Button VerticalAlignment="Center" Width="150" Height="50" Click="addPosition" Content="Dodaj pozycję"/>
+        </StackPanel>
+    </Grid>
+</Window>

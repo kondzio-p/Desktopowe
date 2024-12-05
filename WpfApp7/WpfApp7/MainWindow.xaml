@@ -1,0 +1,45 @@
+﻿<Window x:Class="WpfApp7.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp7"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel Orientation="Vertical" Margin="20">
+            <MediaElement Name="audio" Height="30" Width="200"
+                          VerticalAlignment="Top" Margin="20" LoadedBehavior="Manual"/>
+
+            <Button Name="loadSoundButton" Content="Załaduj dźwięk" Width="120" Height="30" Margin="20"
+                    VerticalAlignment="Top" Click="LoadSound">
+
+                <Button.Triggers>
+                    <EventTrigger RoutedEvent="Button.Click">
+                        <EventTrigger.Actions>
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <MediaTimeline Source="{Binding ElementName=audio, Path=Source}" Storyboard.TargetName="audio"/>
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger.Actions>
+                    </EventTrigger>
+
+                    <EventTrigger RoutedEvent="Button.MouseEnter">
+                        <EventTrigger.Actions>
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <MediaTimeline Source="C:\Users\t4\Documents\kody\Desktopowe\media\multi\click.wav" Storyboard.TargetName="audio"/>
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger.Actions>
+                    </EventTrigger>
+                </Button.Triggers>
+
+
+            </Button>
+            
+            
+        </StackPanel>
+    </Grid>
+</Window>

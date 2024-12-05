@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35222.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Regexy", "WpfApp1\Regexy.csproj", "{55DD2FD9-C5B9-4038-851B-A54E6527293A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{55DD2FD9-C5B9-4038-851B-A54E6527293A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55DD2FD9-C5B9-4038-851B-A54E6527293A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55DD2FD9-C5B9-4038-851B-A54E6527293A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55DD2FD9-C5B9-4038-851B-A54E6527293A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E29E9C84-38DB-4B3C-90C6-6A921CA8AB3C}
+	EndGlobalSection
+EndGlobal

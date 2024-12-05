@@ -1,0 +1,41 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="610" Width="608" Background="#F5F5F5">
+    <Grid Margin="129,10,129,29" Width="350">
+        <StackPanel Margin="46,41,46,41">
+            <!-- Wprowadzanie imienia -->
+            <TextBlock Text="Imię:" Margin="10" Foreground="#333333"/>
+            <TextBox x:Name="txtImie" Margin="10" Background="#FFFFFF" BorderBrush="#CCCCCC" BorderThickness="1"/>
+
+            <!-- Wprowadzanie nazwiska -->
+            <TextBlock Text="Nazwisko:" Margin="10" Foreground="#333333"/>
+            <TextBox x:Name="txtNazwisko" Margin="10" Background="#FFFFFF" BorderBrush="#CCCCCC" BorderThickness="1"/>
+
+            <!-- Wprowadzanie maila -->
+            <TextBlock Text="Email:" Margin="10" Foreground="#333333"/>
+            <TextBox x:Name="txtEmail" Margin="10" Background="#FFFFFF" BorderBrush="#CCCCCC" BorderThickness="1"/>
+
+            <!-- Wybieranie płci -->
+            <TextBlock Text="Płeć:" Margin="10" Foreground="#333333"/>
+            <StackPanel Orientation="Horizontal" Margin="10" HorizontalAlignment="Center">
+                <RadioButton x:Name="dPlecWmn" Content="Kobieta" GroupName="Plec" Margin="10" Foreground="#333333"/>
+                <RadioButton x:Name="dPlecMan" Content="Mężczyzna" GroupName="Plec" Margin="10" Foreground="#333333"/>
+            </StackPanel>
+
+            <!-- Wybór wieku -->
+            <TextBlock Text="Wiek:" Margin="10" Foreground="#333333"/>
+            <StackPanel Orientation="Horizontal" Margin="10" HorizontalAlignment="Center">
+                <RadioButton x:Name="dWiek18" Content="Pełnoletni" GroupName="Wiek" Margin="10" Foreground="#333333"/>
+                <RadioButton x:Name="dWiekUnderage" Content="Nieletni" GroupName="Wiek" Margin="10" Foreground="#333333"/>
+            </StackPanel>
+
+            <!-- Zapisz -->
+            <Button x:Name="btnZapisz" Content="Zapisz" Click="btnZapisz_Click" Margin="7" Width="100" HorizontalAlignment="Center" Background="#4CAF50" Foreground="#FFFFFF" BorderBrush="Transparent"/>
+        </StackPanel>
+    </Grid>
+</Window>
