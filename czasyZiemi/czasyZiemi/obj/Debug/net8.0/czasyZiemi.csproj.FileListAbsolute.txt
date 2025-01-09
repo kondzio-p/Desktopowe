@@ -1,0 +1,15 @@
+C:\Users\t4\Documents\kody\Desktopowe\czasyZiemi\czasyZiemi\bin\Debug\net8.0\czasyZiemi.exe
+C:\Users\t4\Documents\kody\Desktopowe\czasyZiemi\czasyZiemi\bin\Debug\net8.0\czasyZiemi.deps.json
+C:\Users\t4\Documents\kody\Desktopowe\czasyZiemi\czasyZiemi\bin\Debug\net8.0\czasyZiemi.runtimeconfig.json
+C:\Users\t4\Documents\kody\Desktopowe\czasyZiemi\czasyZiemi\bin\Debug\net8.0\czasyZiemi.dll
+C:\Users\t4\Documents\kody\Desktopowe\czasyZiemi\czasyZiemi\bin\Debug\net8.0\czasyZiemi.pdb
+C:\Users\t4\Documents\kody\Desktopowe\czasyZiemi\czasyZiemi\obj\Debug\net8.0\czasyZiemi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\t4\Documents\kody\Desktopowe\czasyZiemi\czasyZiemi\obj\Debug\net8.0\czasyZiemi.AssemblyInfoInputs.cache
+C:\Users\t4\Documents\kody\Desktopowe\czasyZiemi\czasyZiemi\obj\Debug\net8.0\czasyZiemi.AssemblyInfo.cs
+C:\Users\t4\Documents\kody\Desktopowe\czasyZiemi\czasyZiemi\obj\Debug\net8.0\czasyZiemi.csproj.CoreCompileInputs.cache
+C:\Users\t4\Documents\kody\Desktopowe\czasyZiemi\czasyZiemi\obj\Debug\net8.0\czasyZiemi.sourcelink.json
+C:\Users\t4\Documents\kody\Desktopowe\czasyZiemi\czasyZiemi\obj\Debug\net8.0\czasyZiemi.dll
+C:\Users\t4\Documents\kody\Desktopowe\czasyZiemi\czasyZiemi\obj\Debug\net8.0\refint\czasyZiemi.dll
+C:\Users\t4\Documents\kody\Desktopowe\czasyZiemi\czasyZiemi\obj\Debug\net8.0\czasyZiemi.pdb
+C:\Users\t4\Documents\kody\Desktopowe\czasyZiemi\czasyZiemi\obj\Debug\net8.0\czasyZiemi.genruntimeconfig.cache
+C:\Users\t4\Documents\kody\Desktopowe\czasyZiemi\czasyZiemi\obj\Debug\net8.0\ref\czasyZiemi.dll
