@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SprawdzaniePionkow")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+48027751b583cc6ebc32ad0b296935bed2ad42fc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8aeef4a5296c68d0d5b22fce9f370ed91b8b2ca7")]
 [assembly: System.Reflection.AssemblyProductAttribute("SprawdzaniePionkow")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SprawdzaniePionkow")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

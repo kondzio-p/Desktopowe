@@ -1,26 +1,58 @@
 ﻿using System;
+using System.Linq;
 
 class Program
 {
     static void Main(string[] args)
     {
-        string[] wylosowane = { "Zielony", "Niebieski", "Czerwony", "Żółty" };
-        string[] wlozone = { "Niebieski", "Zielony", "Czerwony", "Czerwony" };
-        var czysa = new System.Collections.Generic.List<string>();
+        Console.WriteLine("\n");
 
-        for(int i = 0; i < wlozone.Length; i++)
+        Random random = new Random();
+        string[] kolory = { "Czerwony", "Zielony", "Niebieski", "Żółty" };
+
+        for (int x = 0; x < 20; x++)
         {
-            int idx = Array.IndexOf(wylosowane, wlozone[i]);
+            string[] wylosowane = Enumerable.Range(0, 4)
+            .Select(_ => kolory[random.Next(kolory.Length)])
+            .ToArray();
 
-            if (idx != -1 && idx == i)
+            string[] wlozone = Enumerable.Range(0, 4)
+            .Select(_ => kolory[random.Next(kolory.Length)])
+            .ToArray();
+        
+        
+            Console.WriteLine("\n");
+            Console.WriteLine("Wylosowane: " + string.Join(", ", wylosowane));
+            Console.WriteLine("Włożone: " + string.Join(", ", wlozone));
+
+            bool[] czysa = new bool[4];
+            bool[] uzyte = new bool[4];
+
+            for (int i = 0; i < wlozone.Length; i++)
             {
-                czysa.Add("true");
+                if (wlozone[i] == wylosowane[i])
+                {
+                    czysa[i] = true;
+                    uzyte[i] = true;
+                }
             }
-            else if (idx != -1)
+
+            for (int i = 0; i < wlozone.Length; i++)
             {
-                czysa.Add("false");
+                if (czysa[i] != true)
+                {
+                    for (int j = 0; j < wylosowane.Length; j++)
+                    {
+                        if (!uzyte[j] && wlozone[i] == wylosowane[j])
+                        {
+                            czysa[i] = false;
+                            uzyte[j] = true;
+                            break;
+                        }
+                    }
+                }
             }
+            Console.WriteLine("Dostałem: " + string.Join(" : ", czysa));
         }
-        Console.WriteLine("Dostałem: " + string.Join(", ", czysa));
     }
 }
