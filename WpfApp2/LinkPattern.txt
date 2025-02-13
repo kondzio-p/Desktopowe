@@ -1,0 +1,43 @@
+@(znak @ przed stringiem):
+
+    @ oznacza, że jest to tzw. verbatim string literal w C#. Oznacza to, że w łańcuchu znaków nie trzeba podwajać ukośników \, aby je dosłownie interpretować. Dzięki temu możemy pisać wyrażenie regularne bez użycia podwójnych ukośników, co poprawia czytelność.
+
+(http|https):
+
+    Część wyrażenia w nawiasach ( ) to grupa, która dopasowuje alternatywne wartości.
+    http|https oznacza, że dopasowujemy protokół, który może być albo http, albo https. Znak | w wyrażeniach regularnych oznacza "lub".
+
+://:
+
+    : – dopasowuje dwukropek po protokole.
+    \/\/ – dopasowuje dwa ukośniki, które są częścią adresu URL po protokole (na przykład :// w http://).
+    W wyrażeniach regularnych znak ukośnika musi być poprzedzony znakiem \, dlatego mamy \/\/.
+
+[a-zA-Z0-9.-]+:
+
+    [ ] – nawiasy kwadratowe oznaczają klasę znaków, czyli zestaw znaków, które mogą być dopasowane.
+    a-zA-Z0-9 – dopasowuje dowolną literę małą (a-z), dowolną literę wielką (A-Z) oraz cyfry (0-9).
+    \. – oznacza dosłownie kropkę. Kropka w wyrażeniach regularnych ma specjalne znaczenie (oznacza dowolny znak), więc aby dopasować rzeczywistą kropkę, używamy poprzedzającego ukośnika \.
+    \- – dopasowuje dosłownie myślnik (-). W wyrażeniach regularnych myślnik w środku klasy znaków oznacza zakres, dlatego musimy go również poprzedzić ukośnikiem, aby dopasować dosłownie.
+    + – oznacza, że poprzedzający element (w tym przypadku cała klasa znaków [a-zA-Z0-9\.-]) musi wystąpić co najmniej raz, ale może pojawić się wielokrotnie.
+
+To dopasowuje nazwę domeny, np. example, www.example, subdomain.example itp.
+
+.:
+
+    \. – dopasowuje rzeczywistą kropkę w adresie URL (np. kropkę przed końcówką domeny .com lub .org).
+    Znów musimy poprzedzić kropkę ukośnikiem, ponieważ kropka w wyrażeniach regularnych oznacza dowolny znak, ale tutaj chcemy dopasować dosłowną kropkę.
+
+[a-zA-Z]{2,}:
+
+    [a-zA-Z] – dopasowuje dowolną literę, małą lub wielką.
+    {2,} – oznacza, że poprzedzający element (czyli litera) musi wystąpić co najmniej 2 razy, ale może pojawić się więcej.
+
+To dopasowuje końcówkę domeny, jak np. com, org, net, pl itp., która musi mieć przynajmniej 2 znaki.
+
+*(/\S)?**:
+
+    ( ) – nawiasy okrągłe oznaczają grupowanie.
+    \/ – dopasowuje dosłownie ukośnik /, który jest używany po domenie w URL (np. w https://example.com/path).
+    \S* – \S dopasowuje dowolny znak, który nie jest białym znakiem (czyli nie jest spacją, tabulatorem itp.). Gwiazdka * oznacza, że poprzedzający element (czyli dowolny niebiały znak) może wystąpić zero lub więcej razy.
+    ? – znak zapytania oznacza, że cała grupa (tj. (\/\S*)) jest opcjonalna, co znaczy, że adres URL może mieć ścieżkę po ukośniku, ale nie musi jej mieć.

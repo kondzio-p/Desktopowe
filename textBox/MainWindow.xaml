@@ -1,0 +1,19 @@
+﻿<Window x:Class="Zadanie.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Zadanie"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox Name="textBox" VerticalAlignment="Top" Height="200" Width="500" Margin="10" TextWrapping="Wrap" AcceptsReturn="True" />
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="10">
+            <Button Name="saveButton" Content="Zapisz" Width="100" Margin="5" Click="btnSave_Click" />
+            <Button Name="openButton" Content="Otwórz" Width="100" Margin="5" Click="btnOpen_Click" />
+            <Button Name="saveStreamButton" Content="Zapisz streamem" Width="120" Margin="5" Click="btnSaveStr_Click" />
+            <Button Name="openStreamButton" Content="Otwórz streamem" Width="120" Margin="5" Click="btnOpenStr_Click" />
+        </StackPanel>
+    </Grid>
+</Window>

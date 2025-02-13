@@ -1,0 +1,50 @@
+﻿<Window x:Class="WpfApp11.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp11"
+        mc:Ignorable="d"
+        Title="Rejestracja" Height="450" Width="350">
+    <Grid>
+        <StackPanel Orientation="Vertical" Margin="5">
+            <StackPanel Orientation="Horizontal" Margin="5">
+                <StackPanel Orientation="Vertical" Margin="5">
+                    <Label Content="Imię"/>
+                    <Label Content="Nazwisko"/>
+                    <Label Content="Email"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Vertical" Margin="5">
+                    <TextBox Name="txtImie" Margin="5" Width="110" Height="20"/>
+                    <TextBox Name="txtNazwisko" Margin="5" Width="110" Height="20"/>
+                    <TextBox Name="txtEmail" Margin="5" Width="110" Height="20"/>
+                </StackPanel>
+                <Separator/>
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" Margin="5">
+                <StackPanel Orientation="Horizontal" Margin="5">
+                    <Image Width="80" Height="150" Margin="5"/>
+                    
+                    <GroupBox Margin="5" Header="Płeć" Name="Plec">
+                        <StackPanel Orientation="Horizontal" Margin="5">
+                            <RadioButton Name="rdKobieta" Content="K" GroupName="Plec" Margin="5"/>
+                            <RadioButton Name="rdMezczyzna" Content="M" GroupName="Plec" Margin="5"/>
+                        </StackPanel>
+                    </GroupBox>
+                    <GroupBox Header="Palący" Name="Palacy" Margin="5">
+                        <StackPanel Orientation="Horizontal" Margin="5">
+                            <RadioButton Name="rdTak" Content="Tak" GroupName="Pali" Margin="5"/>
+                            <RadioButton Name="rdNie" Content="Nie" GroupName="Pali" Margin="5"/>
+                        </StackPanel>
+                    </GroupBox>
+                </StackPanel>
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" Margin="5">
+                <Button Name="btnRejestruj" Width="100" Height="30" Content="Zarejestruj" Click="btnRejestruj_Click"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

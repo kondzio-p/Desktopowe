@@ -1,0 +1,20 @@
+﻿<Window x:Class="Frame1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Frame1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <Button Name="btn1" Content="Otwórz stronę 1" Margin="10" Click="btn1_Click"/>
+            <Button Name="btn2" Content="Otwórz stronę 2" Margin="10" Click="btn2_Click"/>
+            <Button Name="btn3" Content="Otwórz stronę 3" Margin="10" Click="btn3_Click"/>
+            <Button Name="btn4" Content="Otwórz stronę 4" Margin="10" Click="btn4_Click"/>
+            <Button Name="btn5" Content="Otwórz stronę 5" Margin="10" Click="btn5_Click"/>
+
+            <Frame Name="MainFrame" NavigationUIVisibility="Hidden" Margin="10"/>
+        </StackPanel>
+    </Grid>
+</Window>

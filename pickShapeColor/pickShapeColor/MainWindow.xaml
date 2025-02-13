@@ -1,0 +1,26 @@
+﻿<Window x:Class="pickShapeColor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel Orientation="Vertical" Margin="20">
+            <StackPanel Orientation="Horizontal" Margin="10" HorizontalAlignment="Center">
+                <Button Content="Rysuj" Height="50" Width="50" Click="DrawButton_Click"></Button>
+
+                <ComboBox x:Name="ShapeComboBox" Width="100" Margin="5">
+                    <ComboBoxItem Content="Prostokąt" Tag="Rectangle"/>
+                    <ComboBoxItem Content="Elipsa" Tag="Ellipse"/>
+                </ComboBox>
+
+                <ComboBox x:Name="ColorComboBox" Width="100" Margin="5">
+                    <ComboBoxItem Content="Czerwony" Tag="Red"/>
+                    <ComboBoxItem Content="Zielony" Tag="Green"/>
+                    <ComboBoxItem Content="Niebieski" Tag="Blue"/>
+                    <ComboBoxItem Content="Żółty" Tag="Yellow"/>
+                </ComboBox>
+            </StackPanel>
+        </StackPanel>
+
+        <Canvas x:Name="RysowanieCanvas" Width="600" Height="300" Background="LightGray" HorizontalAlignment="Center" Margin="0,99,0,35"></Canvas>
+    </Grid>
+</Window>

@@ -1,0 +1,15 @@
+C:\Users\t4\Documents\kody\Desktopowe\Losowania\Losowania\bin\Debug\net8.0\Losowania.exe
+C:\Users\t4\Documents\kody\Desktopowe\Losowania\Losowania\bin\Debug\net8.0\Losowania.deps.json
+C:\Users\t4\Documents\kody\Desktopowe\Losowania\Losowania\bin\Debug\net8.0\Losowania.runtimeconfig.json
+C:\Users\t4\Documents\kody\Desktopowe\Losowania\Losowania\bin\Debug\net8.0\Losowania.dll
+C:\Users\t4\Documents\kody\Desktopowe\Losowania\Losowania\bin\Debug\net8.0\Losowania.pdb
+C:\Users\t4\Documents\kody\Desktopowe\Losowania\Losowania\obj\Debug\net8.0\Losowania.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\t4\Documents\kody\Desktopowe\Losowania\Losowania\obj\Debug\net8.0\Losowania.AssemblyInfoInputs.cache
+C:\Users\t4\Documents\kody\Desktopowe\Losowania\Losowania\obj\Debug\net8.0\Losowania.AssemblyInfo.cs
+C:\Users\t4\Documents\kody\Desktopowe\Losowania\Losowania\obj\Debug\net8.0\Losowania.csproj.CoreCompileInputs.cache
+C:\Users\t4\Documents\kody\Desktopowe\Losowania\Losowania\obj\Debug\net8.0\Losowania.sourcelink.json
+C:\Users\t4\Documents\kody\Desktopowe\Losowania\Losowania\obj\Debug\net8.0\Losowania.dll
+C:\Users\t4\Documents\kody\Desktopowe\Losowania\Losowania\obj\Debug\net8.0\refint\Losowania.dll
+C:\Users\t4\Documents\kody\Desktopowe\Losowania\Losowania\obj\Debug\net8.0\Losowania.pdb
+C:\Users\t4\Documents\kody\Desktopowe\Losowania\Losowania\obj\Debug\net8.0\Losowania.genruntimeconfig.cache
+C:\Users\t4\Documents\kody\Desktopowe\Losowania\Losowania\obj\Debug\net8.0\ref\Losowania.dll
