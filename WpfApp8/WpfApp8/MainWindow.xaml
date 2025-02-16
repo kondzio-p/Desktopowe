@@ -1,0 +1,44 @@
+﻿<Window x:Class="WpfApp8.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp8"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Left" Height="300" Margin="4,0,0,0">
+            <TextBlock Text="Opcje dźwięku"/>
+            <Button Name="btnWczytaj" Content="Wczytaj dźwięk" 
+                    Width="150" Height="30" Margin="20" Click="btnWczytaj_Click"/>
+            <Button Name="btnPlay" Content="Play" 
+                    Width="150" Height="30" Margin="20" Click="btnPlay_Click"/>
+            <Button Name="btnPause" Content="Pause" 
+                    Width="150" Height="30" Margin="20" Click="btnPause_Click"/>
+            <Button Name="btnStop" Content="Stop" 
+                    Width="150" Height="30" Margin="20" Click="btnStop_Click"/>
+        </StackPanel>
+
+        <MediaElement x:Name="video" LoadedBehavior="Manual"
+  UnloadedBehavior="Stop" Stretch="Uniform" Height="200" Margin="254,117"/>
+
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Right" VerticalAlignment="Center" Height="300">
+
+
+
+            <TextBlock Text="Opcje filmu"/>
+
+
+
+            <Button x:Name="btnW" Content="Wczytaj" 
+            Width="150" Height="30" Margin="20" Click="btnWczytajWideo_Click"/>
+            <Button x:Name="btnPlayVid" Content="Play"
+            Width="150" Height="30" Margin="20" Click="btnPlayWideo_Click"/>
+
+            <Button x:Name="btnPauseVid" Content="Pause"
+            Width="150" Height="30" Margin="20" Click="btnPauseWideo_Click"/>
+            <Button x:Name="btnStopVid" Content="Stop"
+            Width="150" Height="30" Margin="20" Click="btnStopWideo_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

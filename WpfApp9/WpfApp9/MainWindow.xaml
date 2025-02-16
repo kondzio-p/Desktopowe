@@ -1,0 +1,57 @@
+﻿<Window x:Class="WpfApp9.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp9"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="#B0C4DE">
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <StackPanel Orientation="Horizontal" Margin="20">
+                <!-- Dane pracownika Section -->
+                <GroupBox Header="Dane pracownika" Width="250" Margin="10">
+                    <StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="5">
+                            <Label Content="Imię" Width="80"/>
+                            <TextBox Name="inputImie" Width="150"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="5">
+                            <Label Content="Nazwisko" Width="80"/>
+                            <TextBox Name="inputNazwisko" Width="150"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="5">
+                            <Label Content="Stanowisko" Width="80"/>
+                            <ComboBox Name="inputStanowisko" Width="150">
+                                <ComboBoxItem Content="Kierownik" Name="kierownik"/>
+                                <ComboBoxItem Content="Starszy programista" Name="oldProgramista"/>
+                                <ComboBoxItem Content="Młodszy programista" Name="newProgramista"/>
+                                <ComboBoxItem Content="Tester" Name="tester"/>
+                            </ComboBox>
+                        </StackPanel>
+                    </StackPanel>
+                </GroupBox>
+
+                <!-- Generowanie hasła Section -->
+                <GroupBox Header="Generowanie hasła" Width="250" Margin="10">
+                    <StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="5">
+                            <Label Content="Ile znaków?" Width="80"/>
+                            <TextBox Name="inputIloscZnakow" Width="150"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Vertical" Margin="5">
+                            <CheckBox Name="smallBigLetters" Content="Małe i wielkie litery" IsChecked="True" Margin="5,0"/>
+                            <CheckBox Name="numbers" Content="Cyfry" Margin="5,0"/>
+                            <CheckBox Name="specialCharacters" Content="Znaki specjalne" Margin="5,0"/>
+                        </StackPanel>
+                        <Button Content="Generuj hasło" Width="100" HorizontalAlignment="Center" Margin="5" Background="#4682B4" Click="generujBtn_Click"/>
+                    </StackPanel>
+                </GroupBox>
+            </StackPanel>
+
+            <!-- Confirm Button -->
+            <Button Content="Zatwierdź" Width="100" HorizontalAlignment="Center" Margin="5" Background="#4682B4" Click="zatwierdzBtn_Click"/>
+        </StackPanel>
+    </Grid>
+    
+</Window>

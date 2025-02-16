@@ -1,0 +1,222 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\t4\\Documents\\kody\\Desktopowe\\Frame1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7EAE4E0D-8B6A-483A-B5E1-1D96DC847F47}|Frame1\\Frame1.csproj|c:\\users\\t4\\documents\\kody\\desktopowe\\frame1\\frame1\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EAE4E0D-8B6A-483A-B5E1-1D96DC847F47}|Frame1\\Frame1.csproj|solutionrelative:frame1\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EAE4E0D-8B6A-483A-B5E1-1D96DC847F47}|Frame1\\Frame1.csproj|c:\\users\\t4\\documents\\kody\\desktopowe\\frame1\\frame1\\page5.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7EAE4E0D-8B6A-483A-B5E1-1D96DC847F47}|Frame1\\Frame1.csproj|solutionrelative:frame1\\page5.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EAE4E0D-8B6A-483A-B5E1-1D96DC847F47}|Frame1\\Frame1.csproj|c:\\users\\t4\\documents\\kody\\desktopowe\\frame1\\frame1\\page5.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EAE4E0D-8B6A-483A-B5E1-1D96DC847F47}|Frame1\\Frame1.csproj|solutionrelative:frame1\\page5.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EAE4E0D-8B6A-483A-B5E1-1D96DC847F47}|Frame1\\Frame1.csproj|c:\\users\\t4\\documents\\kody\\desktopowe\\frame1\\frame1\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7EAE4E0D-8B6A-483A-B5E1-1D96DC847F47}|Frame1\\Frame1.csproj|solutionrelative:frame1\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EAE4E0D-8B6A-483A-B5E1-1D96DC847F47}|Frame1\\Frame1.csproj|c:\\users\\t4\\documents\\kody\\desktopowe\\frame1\\frame1\\page4.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EAE4E0D-8B6A-483A-B5E1-1D96DC847F47}|Frame1\\Frame1.csproj|solutionrelative:frame1\\page4.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EAE4E0D-8B6A-483A-B5E1-1D96DC847F47}|Frame1\\Frame1.csproj|c:\\users\\t4\\documents\\kody\\desktopowe\\frame1\\frame1\\page3.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EAE4E0D-8B6A-483A-B5E1-1D96DC847F47}|Frame1\\Frame1.csproj|solutionrelative:frame1\\page3.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EAE4E0D-8B6A-483A-B5E1-1D96DC847F47}|Frame1\\Frame1.csproj|c:\\users\\t4\\documents\\kody\\desktopowe\\frame1\\frame1\\page4.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7EAE4E0D-8B6A-483A-B5E1-1D96DC847F47}|Frame1\\Frame1.csproj|solutionrelative:frame1\\page4.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EAE4E0D-8B6A-483A-B5E1-1D96DC847F47}|Frame1\\Frame1.csproj|c:\\users\\t4\\documents\\kody\\desktopowe\\frame1\\frame1\\page3.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7EAE4E0D-8B6A-483A-B5E1-1D96DC847F47}|Frame1\\Frame1.csproj|solutionrelative:frame1\\page3.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EAE4E0D-8B6A-483A-B5E1-1D96DC847F47}|Frame1\\Frame1.csproj|c:\\users\\t4\\documents\\kody\\desktopowe\\frame1\\frame1\\page1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7EAE4E0D-8B6A-483A-B5E1-1D96DC847F47}|Frame1\\Frame1.csproj|solutionrelative:frame1\\page1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EAE4E0D-8B6A-483A-B5E1-1D96DC847F47}|Frame1\\Frame1.csproj|c:\\users\\t4\\documents\\kody\\desktopowe\\frame1\\frame1\\page1.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EAE4E0D-8B6A-483A-B5E1-1D96DC847F47}|Frame1\\Frame1.csproj|solutionrelative:frame1\\page1.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EAE4E0D-8B6A-483A-B5E1-1D96DC847F47}|Frame1\\Frame1.csproj|c:\\users\\t4\\documents\\kody\\desktopowe\\frame1\\frame1\\page2.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EAE4E0D-8B6A-483A-B5E1-1D96DC847F47}|Frame1\\Frame1.csproj|solutionrelative:frame1\\page2.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EAE4E0D-8B6A-483A-B5E1-1D96DC847F47}|Frame1\\Frame1.csproj|c:\\users\\t4\\documents\\kody\\desktopowe\\frame1\\frame1\\page2.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7EAE4E0D-8B6A-483A-B5E1-1D96DC847F47}|Frame1\\Frame1.csproj|solutionrelative:frame1\\page2.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Page5.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\t4\\Documents\\kody\\Desktopowe\\Frame1\\Frame1\\Page5.xaml.cs",
+              "RelativeDocumentMoniker": "Frame1\\Page5.xaml.cs",
+              "ToolTip": "C:\\Users\\t4\\Documents\\kody\\Desktopowe\\Frame1\\Frame1\\Page5.xaml.cs",
+              "RelativeToolTip": "Frame1\\Page5.xaml.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T08:04:37.326Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Page5.xaml",
+              "DocumentMoniker": "C:\\Users\\t4\\Documents\\kody\\Desktopowe\\Frame1\\Frame1\\Page5.xaml",
+              "RelativeDocumentMoniker": "Frame1\\Page5.xaml",
+              "ToolTip": "C:\\Users\\t4\\Documents\\kody\\Desktopowe\\Frame1\\Frame1\\Page5.xaml",
+              "RelativeToolTip": "Frame1\\Page5.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-23T08:04:10.773Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Page4.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\t4\\Documents\\kody\\Desktopowe\\Frame1\\Frame1\\Page4.xaml.cs",
+              "RelativeDocumentMoniker": "Frame1\\Page4.xaml.cs",
+              "ToolTip": "C:\\Users\\t4\\Documents\\kody\\Desktopowe\\Frame1\\Frame1\\Page4.xaml.cs",
+              "RelativeToolTip": "Frame1\\Page4.xaml.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAcwA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T07:52:12.551Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Page4.xaml",
+              "DocumentMoniker": "C:\\Users\\t4\\Documents\\kody\\Desktopowe\\Frame1\\Frame1\\Page4.xaml",
+              "RelativeDocumentMoniker": "Frame1\\Page4.xaml",
+              "ToolTip": "C:\\Users\\t4\\Documents\\kody\\Desktopowe\\Frame1\\Frame1\\Page4.xaml",
+              "RelativeToolTip": "Frame1\\Page4.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-23T07:44:30.333Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Page3.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\t4\\Documents\\kody\\Desktopowe\\Frame1\\Frame1\\Page3.xaml.cs",
+              "RelativeDocumentMoniker": "Frame1\\Page3.xaml.cs",
+              "ToolTip": "C:\\Users\\t4\\Documents\\kody\\Desktopowe\\Frame1\\Frame1\\Page3.xaml.cs",
+              "RelativeToolTip": "Frame1\\Page3.xaml.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAYwBcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T07:40:21.289Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Page3.xaml",
+              "DocumentMoniker": "C:\\Users\\t4\\Documents\\kody\\Desktopowe\\Frame1\\Frame1\\Page3.xaml",
+              "RelativeDocumentMoniker": "Frame1\\Page3.xaml",
+              "ToolTip": "C:\\Users\\t4\\Documents\\kody\\Desktopowe\\Frame1\\Frame1\\Page3.xaml",
+              "RelativeToolTip": "Frame1\\Page3.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-23T07:35:04.005Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\t4\\Documents\\kody\\Desktopowe\\Frame1\\Frame1\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Frame1\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\t4\\Documents\\kody\\Desktopowe\\Frame1\\Frame1\\MainWindow.xaml",
+              "RelativeToolTip": "Frame1\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-23T07:15:31.61Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\t4\\Documents\\kody\\Desktopowe\\Frame1\\Frame1\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Frame1\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\t4\\Documents\\kody\\Desktopowe\\Frame1\\Frame1\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Frame1\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAC4AAACAMzMzMzMlwD8AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T07:15:28.22Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Page1.xaml",
+              "DocumentMoniker": "C:\\Users\\t4\\Documents\\kody\\Desktopowe\\Frame1\\Frame1\\Page1.xaml",
+              "RelativeDocumentMoniker": "Frame1\\Page1.xaml",
+              "ToolTip": "C:\\Users\\t4\\Documents\\kody\\Desktopowe\\Frame1\\Frame1\\Page1.xaml",
+              "RelativeToolTip": "Frame1\\Page1.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-23T07:19:34.721Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Page1.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\t4\\Documents\\kody\\Desktopowe\\Frame1\\Frame1\\Page1.xaml.cs",
+              "RelativeDocumentMoniker": "Frame1\\Page1.xaml.cs",
+              "ToolTip": "C:\\Users\\t4\\Documents\\kody\\Desktopowe\\Frame1\\Frame1\\Page1.xaml.cs",
+              "RelativeToolTip": "Frame1\\Page1.xaml.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABYAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T07:28:48.339Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Page2.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\t4\\Documents\\kody\\Desktopowe\\Frame1\\Frame1\\Page2.xaml.cs",
+              "RelativeDocumentMoniker": "Frame1\\Page2.xaml.cs",
+              "ToolTip": "C:\\Users\\t4\\Documents\\kody\\Desktopowe\\Frame1\\Frame1\\Page2.xaml.cs",
+              "RelativeToolTip": "Frame1\\Page2.xaml.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAADwvxkAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T07:29:01.708Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Page2.xaml",
+              "DocumentMoniker": "C:\\Users\\t4\\Documents\\kody\\Desktopowe\\Frame1\\Frame1\\Page2.xaml",
+              "RelativeDocumentMoniker": "Frame1\\Page2.xaml",
+              "ToolTip": "C:\\Users\\t4\\Documents\\kody\\Desktopowe\\Frame1\\Frame1\\Page2.xaml",
+              "RelativeToolTip": "Frame1\\Page2.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-23T07:19:41.081Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

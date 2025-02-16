@@ -1,0 +1,39 @@
+﻿<Window x:Class="tworzenieDaty.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:tworzenieDaty"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="600">
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="20">
+
+            <!-- Nagłówek -->
+            <TextBlock Text="Wprowadź Datę" FontSize="16" FontWeight="Bold" Margin="0,0,0,10" TextAlignment="Center"/>
+
+            <!-- Informacja o poprawnym formacie daty -->
+            <Label Content="Format: DD / MM / RRRR" HorizontalAlignment="Center"/>
+
+            <!-- Sekcja wprowadzania daty -->
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,5">
+                <TextBox x:Name="DayTextBox" Width="60" Height="30" Margin="5" HorizontalContentAlignment="Center" />
+                <TextBox x:Name="MonthTextBox" Width="60" Height="30" Margin="5" HorizontalContentAlignment="Center" />
+                <TextBox x:Name="YearTextBox" Width="80" Height="30" Margin="5" HorizontalContentAlignment="Center" />
+            </StackPanel>
+
+            <!-- Przycisk generowania daty -->
+            <Button x:Name="GenerateDateButton" Content="Generuj Datę" Width="150" Height="35" Margin="0,10" Click="GenerateDateButton_Click"/>
+
+            <!-- Ramka na podstronę -->
+            <Frame x:Name="ContentFrame" Width="350" Height="150" Margin="0,15"/>
+
+            <!-- Przycisk przekazywania daty -->
+            <Button x:Name="SendDateButton" Content="Przekaż Datę" Width="150" Height="35" Margin="0,10" Click="SendDateButton_Click"/>
+
+        </StackPanel>
+
+
+    </Grid>
+</Window>
+
