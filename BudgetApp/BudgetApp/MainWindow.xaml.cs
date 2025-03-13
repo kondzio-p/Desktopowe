@@ -1,35 +1,58 @@
 ﻿using System;
 using System.Collections.ObjectModel;
-using System.Windows;
-using System.Windows.Controls;
-using Newtonsoft.Json;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using Newtonsoft.Json;
 
 namespace BudgetApp
 {
     public partial class MainWindow : Window
     {
-        public ObservableCollection<TaxObligation> TaxObligations { get; set; }
-        private TaxObligation _selectedTax;
-        private readonly HttpClient _httpClient;
+        private readonly HttpClient _httpClient = new HttpClient { BaseAddress = new Uri("http://localhost:5000/api/") };
+
+        public ObservableCollection<Transaction> Transactions { get; set; } = new ObservableCollection<Transaction>();
+        public ObservableCollection<TaxObligation> Taxes { get; set; } = new ObservableCollection<TaxObligation>();
 
         public MainWindow()
         {
             InitializeComponent();
-            _httpClient = new HttpClient { BaseAddress = new Uri("http://localhost:5000/api/") };
             DataContext = this;
-            LoadTaxObligations();
+            LoadTransactionsAsync();
+            LoadTaxesAsync();
         }
 
-        private async void LoadTaxObligations()
+        public async Task LoadTransactionsAsync()
+        {
+            try
+            {
+                var response = await _httpClient.GetStringAsync("transactions");
+                var transactions = JsonConvert.DeserializeObject<ObservableCollection<Transaction>>(response);
+                Transactions.Clear();
+                foreach (var transaction in transactions)
+                {
+                    Transactions.Add(transaction);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Błąd pobierania transakcji: {ex.Message}", "Błąd", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+        public async Task LoadTaxesAsync()
         {
             try
             {
                 var response = await _httpClient.GetStringAsync("taxes");
-                TaxObligations = JsonConvert.DeserializeObject<ObservableCollection<TaxObligation>>(response);
-                TaxObligationsList.ItemsSource = TaxObligations;
+                var taxes = JsonConvert.DeserializeObject<ObservableCollection<TaxObligation>>(response);
+                Taxes.Clear();
+                foreach (var tax in taxes)
+                {
+                    Taxes.Add(tax);
+                }
             }
             catch (Exception ex)
             {
@@ -37,82 +60,92 @@ namespace BudgetApp
             }
         }
 
-        // ✅ Obsługa wyboru elementu z listy podatków
-        private void TaxObligationsList_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            if (TaxObligationsList.SelectedItem != null)
-            {
-                EditTaxPanel.Visibility = Visibility.Visible;
-                _selectedTax = (TaxObligation)TaxObligationsList.SelectedItem;
-                EditTaxName.Text = _selectedTax.Name;
-                EditTaxAmount.Text = _selectedTax.Amount.ToString();
-                EditTaxDueDate.SelectedDate = _selectedTax.DueDate;
-            }
-        }
-
-        // ✅ Obsługa edycji podatków
-        private async void SaveTaxChanges_Click(object sender, RoutedEventArgs e)
-        {
-            if (_selectedTax == null) return;
-
-            _selectedTax.Name = EditTaxName.Text;
-            if (!double.TryParse(EditTaxAmount.Text, out double amount))
-            {
-                MessageBox.Show("Podaj poprawną kwotę!", "Błąd", MessageBoxButton.OK, MessageBoxImage.Warning);
-                return;
-            }
-            _selectedTax.Amount = amount;
-            _selectedTax.DueDate = EditTaxDueDate.SelectedDate ?? DateTime.Now;
-
-            try
-            {
-                var json = JsonConvert.SerializeObject(_selectedTax);
-                var content = new StringContent(json, Encoding.UTF8, "application/json");
-                var response = await _httpClient.PutAsync($"taxes/{_selectedTax.Id}", content);
-
-                if (response.IsSuccessStatusCode)
-                {
-                    MessageBox.Show("Dane podatkowe zaktualizowane!", "Sukces", MessageBoxButton.OK, MessageBoxImage.Information);
-                    EditTaxPanel.Visibility = Visibility.Collapsed;
-                }
-                else
-                {
-                    MessageBox.Show("Błąd aktualizacji podatku.", "Błąd", MessageBoxButton.OK, MessageBoxImage.Error);
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Błąd komunikacji z serwerem: {ex.Message}", "Błąd", MessageBoxButton.OK, MessageBoxImage.Error);
-            }
-        }
-
-        // ✅ Obsługa przycisku "Dodaj transakcję"
         private void AddTransaction_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Funkcja dodawania transakcji w trakcie implementacji.", "Informacja", MessageBoxButton.OK, MessageBoxImage.Information);
-        }
-
-        // ✅ Obsługa przycisku "Usuń transakcję"
-        private void RemoveTransaction_Click(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show("Funkcja usuwania transakcji w trakcie implementacji.", "Informacja", MessageBoxButton.OK, MessageBoxImage.Information);
-        }
-
-        // ✅ Obsługa przycisku "Podatki"
-        private void EditTaxes_Click(object sender, RoutedEventArgs e)
-        {
-            if (TaxObligationsList.SelectedItem == null)
+            var addTransactionWindow = new AddTransactionWindow
             {
-                MessageBox.Show("Wybierz podatek do edycji!", "Błąd", MessageBoxButton.OK, MessageBoxImage.Warning);
-                return;
-            }
-
-            EditTaxPanel.Visibility = Visibility.Visible;
-            _selectedTax = (TaxObligation)TaxObligationsList.SelectedItem;
-            EditTaxName.Text = _selectedTax.Name;
-            EditTaxAmount.Text = _selectedTax.Amount.ToString();
-            EditTaxDueDate.SelectedDate = _selectedTax.DueDate;
+                Owner = this // Ustaw właściciela
+            };
+            addTransactionWindow.ShowDialog();
         }
+
+        private async void RemoveTransaction_Click(object sender, RoutedEventArgs e)
+        {
+            if (TransactionsGrid.SelectedItem is Transaction selectedTransaction)
+            {
+                try
+                {
+                    var response = await _httpClient.DeleteAsync($"transactions/{selectedTransaction.Id}");
+                    if (response.IsSuccessStatusCode)
+                    {
+                        await LoadTransactionsAsync();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Błąd usuwania transakcji.", "Błąd", MessageBoxButton.OK, MessageBoxImage.Error);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Błąd: {ex.Message}", "Błąd", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+            }
+        }
+
+        private void AddTax_Click(object sender, RoutedEventArgs e)
+        {
+            var addTaxWindow = new AddTaxWindow
+            {
+                Owner = this // Ustaw właściciela
+            };
+            addTaxWindow.ShowDialog();
+        }
+
+        private async void EditTax_Click(object sender, RoutedEventArgs e)
+        {
+            if (TaxesGrid.SelectedItem is TaxObligation selectedTax)
+            {
+                var editTaxWindow = new EditTaxWindow(selectedTax)
+                {
+                    Owner = this // Ustaw właściciela
+                };
+                if (editTaxWindow.ShowDialog() == true)
+                {
+                    await LoadTaxesAsync();
+                }
+            }
+        }
+
+        private async void RemoveTax_Click(object sender, RoutedEventArgs e)
+        {
+            if (TaxesGrid.SelectedItem is TaxObligation selectedTax)
+            {
+                try
+                {
+                    var response = await _httpClient.DeleteAsync($"taxes/{selectedTax.Id}");
+                    if (response.IsSuccessStatusCode)
+                    {
+                        await LoadTaxesAsync();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Błąd usuwania podatku.", "Błąd", MessageBoxButton.OK, MessageBoxImage.Error);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Błąd: {ex.Message}", "Błąd", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+            }
+        }
+    }
+
+    public class Transaction
+    {
+        public string Id { get; set; }
+        public string Name { get; set; }
+        public double Amount { get; set; }
+        public DateTime Date { get; set; }
     }
 
     public class TaxObligation

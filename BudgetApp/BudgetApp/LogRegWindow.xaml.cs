@@ -36,9 +36,55 @@ namespace BudgetApp
 
 
 
-        private void RegisterButton_Click(object sender, RoutedEventArgs e)
+        private async void RegisterButton_Click(object sender, RoutedEventArgs e)
         {
-            // Logika obsługi rejestracji
+            // Pobranie danych z pól tekstowych
+            string username = RegisterUsername.Text;
+            string email = RegisterEmail.Text;
+            string password = RegisterPassword.Password;
+            string confirmPassword = RegisterConfirmPassword.Password;
+            string companyName = RegisterCompanyName.Text;
+            string companyAddress = RegisterCompanyAddress.Text;
+
+            // Walidacja danych
+            if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(email) ||
+                string.IsNullOrEmpty(password) || string.IsNullOrEmpty(confirmPassword) ||
+                string.IsNullOrEmpty(companyName))
+            {
+                MessageBox.Show("Wypełnij wszystkie wymagane pola.", "Błąd", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+
+            if (password != confirmPassword)
+            {
+                MessageBox.Show("Hasła nie są identyczne.", "Błąd", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+
+            // Utworzenie instancji AuthService
+            AuthService authService = new AuthService();
+
+            try
+            {
+                // Wysłanie żądania rejestracji do API
+                var response = await authService.RegisterAsync(username, email, password, companyName, companyAddress);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    MessageBox.Show("Rejestracja zakończona pomyślnie.", "Sukces", MessageBoxButton.OK, MessageBoxImage.Information);
+                    // Możesz automatycznie przełączyć użytkownika na zakładkę logowania
+                    // lub zamknąć okno rejestracji/logowania i otworzyć główne okno aplikacji.
+                }
+                else
+                {
+                    string errorMessage = await response.Content.ReadAsStringAsync();
+                    MessageBox.Show($"Błąd rejestracji: {errorMessage}", "Błąd", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Wystąpił błąd: {ex.Message}", "Błąd", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
     }
 }

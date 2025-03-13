@@ -35,3 +35,7 @@ C:\Users\konra\Desktop\Szkola\2024-2025\Kadowski\Desktopowe\BudgetApp\BudgetApp\
 C:\Users\konra\Desktop\Szkola\2024-2025\Kadowski\Desktopowe\BudgetApp\BudgetApp\obj\Debug\net8.0-windows\BudgetApp.pdb
 C:\Users\konra\Desktop\Szkola\2024-2025\Kadowski\Desktopowe\BudgetApp\BudgetApp\obj\Debug\net8.0-windows\BudgetApp.genruntimeconfig.cache
 C:\Users\konra\Desktop\Szkola\2024-2025\Kadowski\Desktopowe\BudgetApp\BudgetApp\obj\Debug\net8.0-windows\ref\BudgetApp.dll
+C:\Users\konra\Desktop\Szkola\2024-2025\Kadowski\Desktopowe\BudgetApp\BudgetApp\obj\Debug\net8.0-windows\AddTaxWindow.baml
+C:\Users\konra\Desktop\Szkola\2024-2025\Kadowski\Desktopowe\BudgetApp\BudgetApp\obj\Debug\net8.0-windows\EditTaxWindow.baml
+C:\Users\konra\Desktop\Szkola\2024-2025\Kadowski\Desktopowe\BudgetApp\BudgetApp\obj\Debug\net8.0-windows\AddTaxWindow.g.cs
+C:\Users\konra\Desktop\Szkola\2024-2025\Kadowski\Desktopowe\BudgetApp\BudgetApp\obj\Debug\net8.0-windows\EditTaxWindow.g.cs
