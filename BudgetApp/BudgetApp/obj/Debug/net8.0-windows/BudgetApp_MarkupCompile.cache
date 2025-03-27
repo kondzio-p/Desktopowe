@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿BudgetApp
 
 
@@ -18,3 +19,25 @@ AddTransactionWindow.xaml;LogRegWindow.xaml;MainWindow.xaml;
 
 False
 
+=======
+﻿BudgetApp
+
+
+winexe
+C#
+.cs
+C:\Users\konra\Desktop\Szkola\2024-2025\Kadowski\Desktopowe\BudgetApp\BudgetApp\obj\Debug\net8.0-windows\
+BudgetApp
+none
+false
+TRACE;DEBUG;NET;NET8_0;NETCOREAPP
+C:\Users\konra\Desktop\Szkola\2024-2025\Kadowski\Desktopowe\BudgetApp\BudgetApp\App.xaml
+5539633817
+
+12-969944313
+207-359069418
+AddTaxWindow.xaml;AddTransactionWindow.xaml;EditTaxWindow.xaml;LogRegWindow.xaml;MainWindow.xaml;
+
+False
+
+>>>>>>> bc63b0c8a2f4b5e4cd52b9e589622db99695b355

@@ -9,7 +9,6 @@ const userSchema = new mongoose.Schema({
 	createdAt: { type: Date, default: Date.now },
 });
 
-// Metoda do sprawdzania hasła
 userSchema.methods.isValidPassword = async function (password) {
 	return await bcrypt.compare(password, this.passwordHash);
 };
