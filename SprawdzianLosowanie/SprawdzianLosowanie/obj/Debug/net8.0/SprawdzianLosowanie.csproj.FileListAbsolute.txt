@@ -1,0 +1,15 @@
+C:\Users\t4\Documents\kody\Desktopowe\SprawdzianLosowanie\SprawdzianLosowanie\bin\Debug\net8.0\SprawdzianLosowanie.exe
+C:\Users\t4\Documents\kody\Desktopowe\SprawdzianLosowanie\SprawdzianLosowanie\bin\Debug\net8.0\SprawdzianLosowanie.deps.json
+C:\Users\t4\Documents\kody\Desktopowe\SprawdzianLosowanie\SprawdzianLosowanie\bin\Debug\net8.0\SprawdzianLosowanie.runtimeconfig.json
+C:\Users\t4\Documents\kody\Desktopowe\SprawdzianLosowanie\SprawdzianLosowanie\bin\Debug\net8.0\SprawdzianLosowanie.dll
+C:\Users\t4\Documents\kody\Desktopowe\SprawdzianLosowanie\SprawdzianLosowanie\bin\Debug\net8.0\SprawdzianLosowanie.pdb
+C:\Users\t4\Documents\kody\Desktopowe\SprawdzianLosowanie\SprawdzianLosowanie\obj\Debug\net8.0\SprawdzianLosowanie.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\t4\Documents\kody\Desktopowe\SprawdzianLosowanie\SprawdzianLosowanie\obj\Debug\net8.0\SprawdzianLosowanie.AssemblyInfoInputs.cache
+C:\Users\t4\Documents\kody\Desktopowe\SprawdzianLosowanie\SprawdzianLosowanie\obj\Debug\net8.0\SprawdzianLosowanie.AssemblyInfo.cs
+C:\Users\t4\Documents\kody\Desktopowe\SprawdzianLosowanie\SprawdzianLosowanie\obj\Debug\net8.0\SprawdzianLosowanie.csproj.CoreCompileInputs.cache
+C:\Users\t4\Documents\kody\Desktopowe\SprawdzianLosowanie\SprawdzianLosowanie\obj\Debug\net8.0\SprawdzianLosowanie.sourcelink.json
+C:\Users\t4\Documents\kody\Desktopowe\SprawdzianLosowanie\SprawdzianLosowanie\obj\Debug\net8.0\SprawdzianLosowanie.dll
+C:\Users\t4\Documents\kody\Desktopowe\SprawdzianLosowanie\SprawdzianLosowanie\obj\Debug\net8.0\refint\SprawdzianLosowanie.dll
+C:\Users\t4\Documents\kody\Desktopowe\SprawdzianLosowanie\SprawdzianLosowanie\obj\Debug\net8.0\SprawdzianLosowanie.pdb
+C:\Users\t4\Documents\kody\Desktopowe\SprawdzianLosowanie\SprawdzianLosowanie\obj\Debug\net8.0\SprawdzianLosowanie.genruntimeconfig.cache
+C:\Users\t4\Documents\kody\Desktopowe\SprawdzianLosowanie\SprawdzianLosowanie\obj\Debug\net8.0\ref\SprawdzianLosowanie.dll

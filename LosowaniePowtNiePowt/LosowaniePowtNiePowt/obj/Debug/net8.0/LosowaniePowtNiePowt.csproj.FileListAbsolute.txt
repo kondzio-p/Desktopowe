@@ -1,0 +1,15 @@
+C:\Users\t4\Documents\kody\Desktopowe\LosowaniePowtNiePowt\LosowaniePowtNiePowt\bin\Debug\net8.0\LosowaniePowtNiePowt.exe
+C:\Users\t4\Documents\kody\Desktopowe\LosowaniePowtNiePowt\LosowaniePowtNiePowt\bin\Debug\net8.0\LosowaniePowtNiePowt.deps.json
+C:\Users\t4\Documents\kody\Desktopowe\LosowaniePowtNiePowt\LosowaniePowtNiePowt\bin\Debug\net8.0\LosowaniePowtNiePowt.runtimeconfig.json
+C:\Users\t4\Documents\kody\Desktopowe\LosowaniePowtNiePowt\LosowaniePowtNiePowt\bin\Debug\net8.0\LosowaniePowtNiePowt.dll
+C:\Users\t4\Documents\kody\Desktopowe\LosowaniePowtNiePowt\LosowaniePowtNiePowt\bin\Debug\net8.0\LosowaniePowtNiePowt.pdb
+C:\Users\t4\Documents\kody\Desktopowe\LosowaniePowtNiePowt\LosowaniePowtNiePowt\obj\Debug\net8.0\LosowaniePowtNiePowt.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\t4\Documents\kody\Desktopowe\LosowaniePowtNiePowt\LosowaniePowtNiePowt\obj\Debug\net8.0\LosowaniePowtNiePowt.AssemblyInfoInputs.cache
+C:\Users\t4\Documents\kody\Desktopowe\LosowaniePowtNiePowt\LosowaniePowtNiePowt\obj\Debug\net8.0\LosowaniePowtNiePowt.AssemblyInfo.cs
+C:\Users\t4\Documents\kody\Desktopowe\LosowaniePowtNiePowt\LosowaniePowtNiePowt\obj\Debug\net8.0\LosowaniePowtNiePowt.csproj.CoreCompileInputs.cache
+C:\Users\t4\Documents\kody\Desktopowe\LosowaniePowtNiePowt\LosowaniePowtNiePowt\obj\Debug\net8.0\LosowaniePowtNiePowt.sourcelink.json
+C:\Users\t4\Documents\kody\Desktopowe\LosowaniePowtNiePowt\LosowaniePowtNiePowt\obj\Debug\net8.0\LosowaniePowtNiePowt.dll
+C:\Users\t4\Documents\kody\Desktopowe\LosowaniePowtNiePowt\LosowaniePowtNiePowt\obj\Debug\net8.0\refint\LosowaniePowtNiePowt.dll
+C:\Users\t4\Documents\kody\Desktopowe\LosowaniePowtNiePowt\LosowaniePowtNiePowt\obj\Debug\net8.0\LosowaniePowtNiePowt.pdb
+C:\Users\t4\Documents\kody\Desktopowe\LosowaniePowtNiePowt\LosowaniePowtNiePowt\obj\Debug\net8.0\LosowaniePowtNiePowt.genruntimeconfig.cache
+C:\Users\t4\Documents\kody\Desktopowe\LosowaniePowtNiePowt\LosowaniePowtNiePowt\obj\Debug\net8.0\ref\LosowaniePowtNiePowt.dll

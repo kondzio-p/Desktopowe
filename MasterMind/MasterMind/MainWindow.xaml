@@ -5,31 +5,28 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MasterMind"
         mc:Ignorable="d"
-        Title="MainWindow" Height="700" Width="250">
-    <Grid>
+        Title="MasterMind" Height="700" Width="310">
+    <Grid VerticalAlignment="Top">
         <StackPanel>
-        <Menu>
-            <MenuItem Header="Gra">
-                <MenuItem Header="_Nowa"/>
-                <Separator/>
-                <MenuItem Header="_Zakończ"/>
-            </MenuItem>
-            <MenuItem Header="O programie">
-                <MenuItem Header="Zasady gry"/>
-                <MenuItem Header="O programie"/>
-            </MenuItem>
-        </Menu>
+            <Menu>
+                <MenuItem Header="Gra">
+                    <MenuItem Header="_Nowa" Click="nowaGra"/>
+                    <Separator/>
+                    <MenuItem Header="_Zakończ"/>
+                </MenuItem>
+                <MenuItem Header="O programie">
+                    <MenuItem Header="Zasady gry"/>
+                    <MenuItem Header="O programie"/>
+                </MenuItem>
+            </Menu>
         </StackPanel>
-
         <StackPanel>
             <ScrollViewer VerticalScrollBarVisibility="Auto" Margin="20">
                 <StackPanel Name="MainPanel" Margin="10">
                     <Button Name="Sprawdzanie" Content="Sprawdź" Margin="5" Click="Sprawdzanie_Click"/>
                 </StackPanel>
+
             </ScrollViewer>
         </StackPanel>
-
-
-
     </Grid>
 </Window>
