@@ -11,13 +11,14 @@
             <Menu>
                 <MenuItem Header="Gra">
                     <MenuItem Header="_Nowa" Click="nowaGra"/>
+                    <MenuItem Header="_Reset" Click="Reset_Click"/>
                     <Separator/>
-                    <MenuItem Header="_Zakończ"/>
+                    <MenuItem Header="_Zakończ" Click="Zamknij_Click"/>
                 </MenuItem>
-                <MenuItem Header="O programie">
-                    <MenuItem Header="Zasady gry"/>
-                    <MenuItem Header="O programie"/>
+                <MenuItem Header="O grze">
+                    <MenuItem Header="Zasady gry" Click="ShowGameRules_Click"/>
                 </MenuItem>
+                <MenuItem Header="Tabela chwały" Click="ShowHighScores_Click"/>
             </Menu>
         </StackPanel>
         <StackPanel>
@@ -25,7 +26,6 @@
                 <StackPanel Name="MainPanel" Margin="10">
                     <Button Name="Sprawdzanie" Content="Sprawdź" Margin="5" Click="Sprawdzanie_Click"/>
                 </StackPanel>
-
             </ScrollViewer>
         </StackPanel>
     </Grid>
