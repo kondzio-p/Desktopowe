@@ -1,0 +1,43 @@
+### Build output
+bin/
+obj/
+[Bb]uild/
+[Ll]og/
+.vs/
+*.user
+*.suo
+*.aps
+*.ncb
+*.opendb
+
+### IDE
+*.code-workspace
+*.userprefs
+
+### Pakiety / cache
+packages/
+*.nupkg
+*.cache
+*.tmp
+
+### Systemowe
+Thumbs.db
+ehthumbs.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+### Archiwa i binaria (nie wersjonuj!)
+*.zip
+*.7z
+*.rar
+*.tar
+*.gz
+*.exe
+*.dll
+*.pdb
+
+### Inne “artefakty”
+*.bak
+*.old
+*.log
+*.DS_Store
