@@ -1,0 +1,77 @@
+==================================================
+SCENARIUSZ TESTÓW – APLIKACJA "BAZA UCZNIÓW"
+==================================================
+
+T1 – Wczytanie poprawnego pliku
+--------------------------------
+Dane wejściowe:
+- Istnieje plik "uczniowie.csv" z poprawnymi danymi
+- Użytkownik uruchamia program
+- Z menu wybiera opcję: 1 (Wyświetl wszystkich uczniów)
+
+Oczekiwany wynik:
+- Wyświetlenie w konsoli listy wszystkich uczniów
+- Komunikat wczytania: "Dane wczytano poprawnie."
+
+--------------------------------------------------
+
+T2 – Brak pliku CSV
+--------------------------------
+Dane wejściowe:
+- Brak pliku "uczniowie.csv" w katalogu projektu
+- Użytkownik uruchamia program
+
+Oczekiwany wynik:
+- Komunikat błędu: "Nie znaleziono pliku!"
+
+--------------------------------------------------
+
+T3 – Sortowanie po nazwisku
+--------------------------------
+Dane wejściowe:
+- Istnieje plik "uczniowie.csv" z poprawnymi danymi
+- Użytkownik uruchamia program
+- Z menu wybiera opcję: 2 (Posortuj wg nazwiska)
+
+Oczekiwany wynik:
+- Komunikat: "Posortowano wg nazwiska."
+- Lista uczniów w konsoli posortowana alfabetycznie po nazwisku (A–Z)
+
+--------------------------------------------------
+
+T4 – Sortowanie po średniej
+--------------------------------
+Dane wejściowe:
+- Istnieje plik "uczniowie.csv" z poprawnymi danymi
+- Użytkownik uruchamia program
+- Z menu wybiera opcję: 3 (Posortuj wg średniej ocen)
+
+Oczekiwany wynik:
+- Komunikat: "Posortowano wg średniej ocen."
+- Lista uczniów w konsoli posortowana malejąco wg średnich ocen (od najwyższej do najniższej)
+
+--------------------------------------------------
+
+T5 – Wyszukiwanie istniejącego nazwiska
+--------------------------------
+Dane wejściowe:
+- Istnieje plik "uczniowie.csv" z poprawnymi danymi
+- Użytkownik uruchamia program
+- Z menu wybiera opcję: 4 (Wyszukaj ucznia)
+- Podaje istniejące nazwisko, np. "Mazur"
+
+Oczekiwany wynik:
+- Komunikat: "🔎 Znaleziono: Katarzyna Mazur (2Ti) - oceny: [...] - średnia: ..."
+
+--------------------------------------------------
+
+T6 – Wyszukiwanie nieistniejącego nazwiska
+--------------------------------
+Dane wejściowe:
+- Istnieje plik "uczniowie.csv" z poprawnymi danymi
+- Użytkownik uruchamia program
+- Z menu wybiera opcję: 4 (Wyszukaj ucznia)
+- Podaje nieistniejące nazwisko, np. "Kwiatkowski"
+
+Oczekiwany wynik:
+- Komunikat: "Uczeń nie został znaleziony."
