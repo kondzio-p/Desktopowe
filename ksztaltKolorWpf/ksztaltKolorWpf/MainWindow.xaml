@@ -1,0 +1,51 @@
+﻿<Window x:Class="ksztaltKolorWpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ksztaltKolorWpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel Orientation="Horizontal">
+            <StackPanel Orientation="Vertical" Width="250" Margin="15">
+                <StackPanel Margin="5">
+                    <TextBlock Text="Kolor: "/>
+                    <ComboBox Name="cbKolor" SelectionChanged="cbKolor_SelectionChanged">
+                        <ComboBoxItem Content="Czerwony" Tag="Red"/>
+                        <ComboBoxItem Content="Zielony" Tag="Green"/>
+                        <ComboBoxItem Content="Niebieski" Tag="Blue"/>
+                    </ComboBox>
+                </StackPanel>
+
+                <StackPanel Margin="5">
+                    <TextBlock Text="Figura: "/>
+                    <ListBox x:Name="lbKsztalty" SelectionChanged="lbKsztalty_SelectionChanged">
+                        <ListBoxItem Content="Koło" Tag="Circle"/>
+                        <ListBoxItem Content="Kwadrat" Tag="Square"/>
+                        <ListBoxItem Content="Prostokąt" Tag="Rectangle"/>
+                    </ListBox>
+                </StackPanel>
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical">
+
+                <TextBlock x:Name="txtAktualnyWybor" FontSize="16" FontWeight="Bold" Margin="5" Text="Brak wyboru"/>
+
+                <StackPanel Width="500" Height="300">
+                    <Canvas x:Name="mojCanvas" Width="500" Height="300" Margin="10"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
+                    <Label Content="Szerokość:"/>
+                    <Slider x:Name="sliderSzerokosc" Minimum="20" Maximum="400" Value="100" Width="150"
+                            ValueChanged="Slider_ValueChanged" Margin="5,0"/>
+                    <Label Content="Wysokość:"/>
+                    <Slider x:Name="sliderWysokosc" Minimum="20" Maximum="300" Value="100" Width="150"
+                            ValueChanged="Slider_ValueChanged" Margin="5,0"/>
+                </StackPanel>
+            </StackPanel>
+            
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,53 @@
+﻿<Window x:Class="WprowadzanieDanych.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WprowadzanieDanych"
+        mc:Ignorable="d"
+        Title="Dane osobowe" Height="450" Width="800">
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <StackPanel Orientation="Vertical" Margin="15">
+                <TextBlock Text="Imię i nazwisko:"/>
+                <TextBox Name="txtImieNazwisko"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" Margin="15">
+                <TextBlock Text="Klasa:"/>
+                <ComboBox Name="cbKlasa">
+                    <ComboBoxItem Name="cbKlasa1" Content="Klasa 1"/>
+                    <ComboBoxItem Name="cbKlasa2" Content="Klasa 2"/>
+                    <ComboBoxItem Name="cbKlasa3" Content="Klasa 3"/>
+                    <ComboBoxItem Name="cbKlasa4" Content="Klasa 4"/>
+                    <ComboBoxItem Name="cbKlasa5" Content="Klasa 5"/>
+                </ComboBox>
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" Margin="15">
+                <TextBlock Text="Hobby:"/>
+                <ListBox Name="lbHobby" SelectionMode="Multiple">
+                    <ListBoxItem Name="lbSport" Content="sport"/>
+                    <ListBoxItem Name="lbMuzyka" Content="muzyka"/>
+                    <ListBoxItem Name="lbTaniec" Content="taniec"/>
+                    <ListBoxItem Name="lbKino" Content="kino"/>
+                </ListBox>
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" Margin="15">
+                <TextBlock Text="Ulubiony przedmiot:"/>
+                <StackPanel Orientation="Horizontal">
+                    <CheckBox Name="cbPolski" Content="polski"/>
+                    <CheckBox Name="cbMatematyka" Content="matematyka"/>
+                    <CheckBox Name="cbChemia" Content="chemia"/>
+                    <CheckBox Name="cbFizyka" Content="fizyka"/>
+                    <CheckBox Name="cbGeografia" Content="geografia"/>
+                </StackPanel>
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" Margin="15">
+                <Button Name="btnZapisz" Content="Zapisz" Click="Button_Click"></Button>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

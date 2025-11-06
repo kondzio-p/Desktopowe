@@ -1,0 +1,12 @@
+Anglia;Manchester United;1878;20
+Anglia;Liverpool FC;1892;19
+Włochy;Juventus;1897;36
+Hiszpania;FC Barcelona;1899;27
+Włochy;AC Milan;1899;19
+Niemcy;Bayern Monachium;1900;33
+Holandia;Ajax Amsterdam;1900;36
+Hiszpania;Real Madrid;1902;36
+Portugalia;SL Benfica;1904;38
+Polska;Legia Warszawa;1916;16
+Polska;Ruch Chorzów;1920;14
+Francja;Paris Saint-Germain;1970;12
