@@ -1,0 +1,47 @@
+﻿<Window x:Class="daneUzytkownika.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:daneUzytkownika"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="550" Width="400">
+    <Grid>
+        <StackPanel Orientation="Vertical" Margin="10px">
+            <Label Content="Imię i nazwisko:"/>
+            <TextBox Name="txtImie"/>
+
+            <Label Content="Data urodzenia:"/>
+            <DatePicker Name="txtDataUr"/>
+
+            <Button Content="Załaduj zdjęcie" Margin="0, 10, 0 ,0" Click="btnWczytajZdjecie_Click"/>
+
+            <GroupBox>
+                <GroupBox.Header>Języki</GroupBox.Header>
+                <StackPanel Orientation="Vertical">
+                    <CheckBox Name="chPolski" Content="Polski"/>
+                    <CheckBox Name="chNiemiecki" Content="Niemiecki"/>
+                    <CheckBox Name="chAngielski" Content="Angielski"/>
+                    <CheckBox Name="chRosyjski" Content="Rosyjski"/>
+                </StackPanel>
+            </GroupBox>
+
+            <Label Content="Kolor oczu:"/>
+            <ComboBox Name="comboKolorOczu">
+                <ComboBoxItem Name="oczyZielone" Content="oczyZielone"/>
+                <ComboBoxItem Name="oczyBrazowe" Content="oczyBrazowe"/>
+                <ComboBoxItem Name="oczyNiebieskie" Content="oczyNiebieskie"/>
+            </ComboBox>
+
+            <StackPanel VerticalAlignment="Bottom" HorizontalAlignment="Right" Orientation="Horizontal" Height="209">
+
+                    <Button Content="Zapisz" Click="btnZapisz_Click" VerticalAlignment="Bottom"/>
+
+            </StackPanel>
+
+            
+            
+        </StackPanel>
+        
+    </Grid>
+</Window>
